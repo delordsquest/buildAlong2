@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: brown;
+  --background-color: cornsilk;
+  --font-color: #3a3a3a;
+}
+
+html,
+body {
+  height: 100lvh;
+  background-color: var(--background-color);
+  font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+}
+
+header {
+  background-color: pink;
+  color: var(--primary-color);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  height: calc(100lvh - 100px);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.cupcake-photo {
+  height: 400px;
+  aspect-ratio: 1/1;
+  margin: 0 auto 10px auto;
+  border: 4px var(--primary-color) solid;
+  border-radius: 4px;
+}
+
+.content > h1 {
+  color: var(--primary-color);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content > p {
+  font-size: 18px;
+  margin-bottom: 4px;
+  color: var(--font-color);
+}
+
+footer {
+  text-align: center;
+  color: var(--font-color);
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+  }
+
+  .cupcake-photo {
+    height: 600px;
+  }
+
+  .content > h1 {
+    font-size: 30px;
+  }
+}
